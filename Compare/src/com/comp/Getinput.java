@@ -25,11 +25,9 @@ public class Getinput {
 	         list.add(new Student(id,name,cgpa));
 		}
 		scan.close();
-		Collections.sort(list,Collections.reverseOrder(new CompareId()));  
+		Collections.sort(list,new Rearrange());  
 		 
-		 Collections.sort(list,new CompareName());
-		 
-		 Collections.sort(list,Collections.reverseOrder(new CompareCGPA())); 
+		
 		 
 		 
 		 Iterator itr=list.iterator(); 
